@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+
+    <meta
+        name="description"
+        content="Developer & Technology Explorer — explore GitHub developers, repositories, programming languages, and technology articles."
+    >
+
+    <meta
+        name="theme-color"
+        content="#2563EB"
+    >
+
+    <title>DTX — Developer & Technology Explorer</title>
+
+    <link
+        rel="stylesheet"
+        href="/css/main.css"
+    >
+
+    <link
+        rel="icon"
+        type="image/svg+xml"
+        href="/favicon.svg"
+    >
+</head>
+
+
+<body data-page="home">
+
+    <header id="site-header"></header>
+
+
+    <main>
+
+        <section class="hero container">
+
+            <div class="hero__copy">
+
+                <p class="eyebrow">
+                    Developer & Technology Explorer
+                </p>
+
+                <h1>
+                    Explore developers.<br>
+                    <span>Discover technology.</span>
+                </h1>
+
+                <p class="hero__text">
+                    Search GitHub developers and repositories,
+                    discover technology articles, and save useful
+                    resources in one focused workspace.
+                </p>
+
+
+                <form
+                    id="home-search"
+                    class="searchbar"
+                    novalidate
+                >
+
+                    <label
+                        class="sr-only"
+                        for="home-query"
+                    >
+                        Search developers
+                    </label>
+
+                    <input
+                        id="home-query"
+                        name="q"
+                        type="search"
+                        minlength="2"
+                        placeholder="Search GitHub developers..."
+                        autocomplete="off"
+                    >
+
+                    <button
+                        class="btn btn--primary"
+                        type="submit"
+                    >
+                        Search
+                    </button>
+
+                </form>
+
+
+                <div
+                    id="home-search-message"
+                    aria-live="polite"
+                ></div>
+
+            </div>
+
+
+            <div
+                class="hero__visual"
+                aria-hidden="true"
+            >
+
+                <div class="code-window">
+
+                    <div class="window-dots">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+
+                    <code>
+                        &lt;explore <b>technology</b> /&gt;
+                    </code>
+
+                    <span>
+                        GitHub + Dev.to
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="container section">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="eyebrow">
+                        Discover
+                    </p>
+
+                    <h2>
+                        Technology dashboard
+                    </h2>
+                </div>
+
+                <a
+                    href="articles.html"
+                    class="text-link"
+                >
+                    View articles →
+                </a>
+
+            </div>
+
+
+            <div
+                id="home-content"
+                class="dashboard-grid"
+            >
+
+                <article class="panel panel--wide">
+
+                    <div class="panel-heading">
+
+                        <h3>
+                            Developer highlights
+                        </h3>
+
+                        <a href="developers.html">
+                            Explore →
+                        </a>
+
+                    </div>
+
+                    <div
+                        id="developer-highlights"
+                        class="card-grid card-grid--3"
+                    ></div>
+
+                </article>
+
+
+                <article class="panel">
+
+                    <div class="panel-heading">
+
+                        <h3>
+                            Latest articles
+                        </h3>
+
+                        <a href="articles.html">
+                            View all →
+                        </a>
+
+                    </div>
+
+                    <div
+                        id="latest-articles"
+                        class="stack"
+                    ></div>
+
+                </article>
+
+
+                <article class="panel">
+
+                    <div class="panel-heading">
+
+                        <h3>
+                            Popular technologies
+                        </h3>
+
+                    </div>
+
+                    <div
+                        id="popular-tags"
+                        class="tag-list"
+                    ></div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer id="site-footer"></footer>
+
+
+    <script
+        type="module"
+        src="/js/main.js"
+    ></script>
+
+</body>
+
+</html>

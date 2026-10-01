@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+
+    <meta
+        name="description"
+        content="Search and explore GitHub repositories."
+    >
+
+    <title>Repositories — DTX</title>
+
+    <link
+        rel="stylesheet"
+        href="/css/main.css"
+    >
+
+    <link
+        rel="icon"
+        type="image/svg+xml"
+        href="/favicon.svg"
+    >
+</head>
+
+<body data-page="repositories">
+
+    <header id="site-header"></header>
+
+    <main class="container page">
+
+        <div class="page-header">
+            <p class="eyebrow">GitHub</p>
+
+            <h1>Repository Explorer</h1>
+
+            <p>
+                Search open-source projects and filter by technology.
+            </p>
+        </div>
+
+
+        <form
+            id="repo-search"
+            class="filterbar"
+            novalidate
+        >
+
+            <label
+                class="sr-only"
+                for="repo-query"
+            >
+                Repository search
+            </label>
+
+            <input
+                id="repo-query"
+                name="q"
+                type="search"
+                minlength="2"
+                placeholder="e.g. python, react, web development..."
+                required
+            >
+
+
+            <label
+                class="sr-only"
+                for="repo-language"
+            >
+                Language
+            </label>
+
+            <select id="repo-language">
+                <option value="">Any language</option>
+                <option>JavaScript</option>
+                <option>Python</option>
+                <option>TypeScript</option>
+                <option>Java</option>
+                <option>PHP</option>
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>Go</option>
+            </select>
+
+
+            <button
+                class="btn btn--primary"
+                type="submit"
+            >
+                Search
+            </button>
+
+        </form>
+
+
+        <div
+            id="repo-results"
+            aria-live="polite"
+        ></div>
+
+    </main>
+
+
+    <footer id="site-footer"></footer>
+
+
+    <script
+        type="module"
+        src="/js/main.js"
+    ></script>
+
+</body>
+
+</html>

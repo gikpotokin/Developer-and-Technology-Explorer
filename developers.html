@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    >
+
+    <meta
+      name="description"
+      content="Search GitHub developers with Developer & Technology Explorer."
+    >
+
+    <title>Developers — DTX</title>
+
+    <link
+      rel="stylesheet"
+      href="/css/main.css"
+    >
+
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/favicon.svg"
+    >
+  </head>
+
+  <body data-page="developers">
+    <header id="site-header"></header>
+
+    <main class="container page">
+      <div class="page-header">
+        <p class="eyebrow">GitHub</p>
+
+        <h1>Developer Explorer</h1>
+
+        <p>
+          Find developers by username, name, or keyword.
+        </p>
+      </div>
+
+      <form
+        id="developer-search"
+        class="filterbar"
+        novalidate
+      >
+        <label
+          class="sr-only"
+          for="developer-query"
+        >
+          Developer search
+        </label>
+
+        <input
+          id="developer-query"
+          name="q"
+          type="search"
+          minlength="2"
+          placeholder="e.g. octocat, javascript..."
+          required
+        >
+
+        <button
+          class="btn btn--primary"
+          type="submit"
+        >
+          Search
+        </button>
+      </form>
+
+      <div
+        id="developer-results"
+        aria-live="polite"
+      ></div>
+    </main>
+
+    <footer id="site-footer"></footer>
+
+    <script
+      type="module"
+      src="/js/main.js"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    >
+
+    <meta
+      name="description"
+      content="Discover technology articles from Dev.to."
+    >
+
+    <title>Articles — DTX</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/favicon.svg"
+    >
+  </head>
+
+  <body data-page="articles">
+    <header id="site-header"></header>
+
+    <main class="container page">
+      <div class="page-header">
+        <p class="eyebrow">Dev Community</p>
+
+        <h1>Technology Articles</h1>
+
+        <p>
+          Discover current developer-community content
+          from Dev.to.
+        </p>
+      </div>
+
+      <form
+        id="article-search"
+        class="filterbar"
+        novalidate
+      >
+        <label
+          class="sr-only"
+          for="article-query"
+        >
+          Article search
+        </label>
+
+        <input
+          id="article-query"
+          name="q"
+          type="search"
+          placeholder="Search by topic or tag..."
+        >
+
+        <label
+          class="sr-only"
+          for="article-tag"
+        >
+          Technology tag
+        </label>
+
+        <input
+          id="article-tag"
+          name="tag"
+          type="text"
+          placeholder="Tag, e.g. javascript"
+        >
+
+        <button
+          class="btn btn--primary"
+          type="submit"
+        >
+          Explore
+        </button>
+      </form>
+
+      <div
+        id="article-results"
+        aria-live="polite"
+      ></div>
+    </main>
+
+    <footer id="site-footer"></footer>
+
+    <script
+      type="module"
+      src="/js/main.js"
+    ></script>
+  </body>
+</html>
